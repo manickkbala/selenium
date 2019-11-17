@@ -25,9 +25,11 @@ public class findelements {
 			WebElement aa = ele.get(i);
 			String bb = aa.getText();
 			System.out.println(bb);
+			Thread.sleep(3000);
 			Point bc = aa.getLocation();
 			System.out.println("the location of  " + bb + " is :" + bc);
 		}
+		
 		
 		Thread.sleep(2000);
 		driver.close();
